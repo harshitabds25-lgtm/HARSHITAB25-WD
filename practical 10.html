@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 10 - Iframe Experiment</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #444;
+        }
+
+        .container {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Iframe Experiment</h1>
+
+    <!-- External Website -->
+    <div class="container">
+        <h2>Embedded External Web Page</h2>
+
+        <!-- Changed from example.com to working site -->
+        <iframe 
+            src="https://www.wikipedia.org" 
+            title="Wikipedia Website"
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Google Map -->
+    <div class="container">
+        <h2>Embedded Google Map</h2>
+
+        <iframe 
+            src="https://maps.google.com/maps?q=Nagpur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            title="Nagpur Map"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
